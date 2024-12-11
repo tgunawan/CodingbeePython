@@ -1,0 +1,21 @@
+import turtle
+
+__Pen = turtle.Pen()
+
+
+turtle.bgcolor("#3333ff")
+__Pen.speed(1)
+__Pen.pencolor("#3333ff")
+__Pen.penup()
+__Pen.goto(100, 100)
+__Pen.pendown()
+__Pen.fillcolor("#cc66cc")
+__Pen.begin_fill()
+__Pen.circle(50)
+__Pen.end_fill()
+__Pen.goto(120, 100)
+__Pen.fillcolor("#3333ff")
+__Pen.begin_fill()
+__Pen.circle(50)
+__Pen.end_fill()
+turtle.done()
