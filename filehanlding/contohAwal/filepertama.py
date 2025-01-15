@@ -37,6 +37,7 @@ with open("filehanlding/contohAwal/awal.txt", "r") as file:
     # print(nama.strip())
     print(isi)
 print("#"*50)
+
 for baris in isi:
     print(baris.strip(), end="")
 
