@@ -27,5 +27,5 @@ for i in range(2,12):
         labelhasil=tk.Label(window,text=result)
         labelhasil.grid(row=i,column=j)
 
-        
+
 window.mainloop()
