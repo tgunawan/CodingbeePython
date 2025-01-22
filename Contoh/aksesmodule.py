@@ -5,3 +5,4 @@ os.system("cls")
 f.tulis()
 
 print(f.hasilhitung(5))
+print('test')
