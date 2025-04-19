@@ -29,3 +29,4 @@ def create_tab_view():
 
 if __name__ == "__main__":
     create_tab_view()
+    print("finish")
