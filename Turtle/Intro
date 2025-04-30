@@ -18,4 +18,18 @@ __Pen.fillcolor("#3333ff")
 __Pen.begin_fill()
 __Pen.circle(50)
 __Pen.end_fill()
+
+screen = turtle.Screen()
+screen.bgcolor("light blue")
+turtle.shape("turtle")
+turtle.color("green")
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+
+
 turtle.done()
