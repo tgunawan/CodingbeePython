@@ -1,2 +1,2 @@
 import subprocess
-subprocess.run(["python", "./Project/filterWords.py"])
+subprocess.run(["python", "./Project/nanoChatbot.py"])
