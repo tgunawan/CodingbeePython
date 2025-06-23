@@ -50,5 +50,3 @@ def create_window():
 
     window.mainloop()
 
-if __name__ == "__main__":
-    create_window()
