@@ -50,3 +50,4 @@ def create_window():
 
     window.mainloop()
 
+create_window()
