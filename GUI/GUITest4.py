@@ -31,7 +31,7 @@ def create_window():
 
     # Bottom half of the left frame
     bottom_left_frame = tk.Frame(left_frame, borderwidth=2, relief="groove")
-    bottom_left_frame.pack(fill="both", expand=True)
+    bottom_left_frame.pack(fill="both", anchor="center")
     link_label2 = tk.Label(bottom_left_frame, text="Link 2", font=("Arial", 12))
     link_label2.pack(pady=5)
     # ... add more link labels as needed

@@ -1,3 +1,15 @@
+'''import subprocess
+
+subprocess.run(["python","install.py"])
+subprocess.run(["python","project2.py"])
+'''#codehs
+#install ttkbootstrap
+'''import subprocess
+import sys
+
+subprocess.check_call([sys.executable, "-m", "pip", "install", "ttkbootstrap"])'''
+
+#Project 2: Data Entry Form
 import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
 
@@ -61,10 +73,30 @@ class DataEntryForm(ttk.Frame):
 
     def on_submit(self):
         """Print the contents to console and return the values."""
-        print("Name:", self.name.get())
+        '''print("Name:", self.name.get())
         print("Address:", self.address.get())
         print("Phone:", self.phone.get())
-        return self.name.get(), self.address.get(), self.phone.get()
+        return self.name.get(), self.address.get(), self.phone.get()'''
+
+
+        """Print the contents to console, save to file, and return the values."""
+        name = self.name.get()
+        address = self.address.get()
+        phone = self.phone.get()
+
+        # Print ke console
+        print("Name:", name)
+        print("Address:", address)
+        print("Phone:", phone)
+
+        # Tulis ke file (mode append agar tidak menimpa data lama)
+        with open("data.txt", "a", encoding="utf-8") as file:
+            file.write(f"Name: {name}\n")
+            file.write(f"Address: {address}\n")
+            file.write(f"Phone: {phone}\n")
+            file.write("-" * 30 + "\n")
+
+        return name, address, phone
 
     def on_cancel(self):
         """Cancel and close the application."""
